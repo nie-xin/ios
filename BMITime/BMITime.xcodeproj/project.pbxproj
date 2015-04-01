@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F6F827591AC9EA72006DDABF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F827581AC9EA72006DDABF /* main.m */; };
 		F6F827611AC9EB5B006DDABF /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F827601AC9EB5B006DDABF /* BNRPerson.m */; };
+		F6F8277A1ACC8646006DDABF /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F827791ACC8646006DDABF /* BNREmployee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		F6F827581AC9EA72006DDABF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6F8275F1AC9EB5B006DDABF /* BNRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
 		F6F827601AC9EB5B006DDABF /* BNRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
+		F6F827781ACC8646006DDABF /* BNREmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNREmployee.h; sourceTree = "<group>"; };
+		F6F827791ACC8646006DDABF /* BNREmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				F6F827581AC9EA72006DDABF /* main.m */,
+				F6F827781ACC8646006DDABF /* BNREmployee.h */,
+				F6F827791ACC8646006DDABF /* BNREmployee.m */,
 				F6F8275F1AC9EB5B006DDABF /* BNRPerson.h */,
 				F6F827601AC9EB5B006DDABF /* BNRPerson.m */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F8277A1ACC8646006DDABF /* BNREmployee.m in Sources */,
 				F6F827591AC9EA72006DDABF /* main.m in Sources */,
 				F6F827611AC9EB5B006DDABF /* BNRPerson.m in Sources */,
 			);
@@ -238,6 +244,7 @@
 				F6F8275E1AC9EA72006DDABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
