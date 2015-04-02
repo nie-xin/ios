@@ -10,6 +10,7 @@
 		F6F827591AC9EA72006DDABF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F827581AC9EA72006DDABF /* main.m */; };
 		F6F827611AC9EB5B006DDABF /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F827601AC9EB5B006DDABF /* BNRPerson.m */; };
 		F6F8277A1ACC8646006DDABF /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F827791ACC8646006DDABF /* BNREmployee.m */; };
+		F6F827801ACDE8E6006DDABF /* BNRAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F8277F1ACDE8E6006DDABF /* BNRAsset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		F6F827601AC9EB5B006DDABF /* BNRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
 		F6F827781ACC8646006DDABF /* BNREmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNREmployee.h; sourceTree = "<group>"; };
 		F6F827791ACC8646006DDABF /* BNREmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
+		F6F8277E1ACDE8E6006DDABF /* BNRAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAsset.h; sourceTree = "<group>"; };
+		F6F8277F1ACDE8E6006DDABF /* BNRAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAsset.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				F6F827581AC9EA72006DDABF /* main.m */,
+				F6F8277E1ACDE8E6006DDABF /* BNRAsset.h */,
+				F6F8277F1ACDE8E6006DDABF /* BNRAsset.m */,
 				F6F827781ACC8646006DDABF /* BNREmployee.h */,
 				F6F827791ACC8646006DDABF /* BNREmployee.m */,
 				F6F8275F1AC9EB5B006DDABF /* BNRPerson.h */,
@@ -131,6 +136,7 @@
 				F6F8277A1ACC8646006DDABF /* BNREmployee.m in Sources */,
 				F6F827591AC9EA72006DDABF /* main.m in Sources */,
 				F6F827611AC9EB5B006DDABF /* BNRPerson.m in Sources */,
+				F6F827801ACDE8E6006DDABF /* BNRAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
