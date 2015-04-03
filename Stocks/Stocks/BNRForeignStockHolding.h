@@ -11,5 +11,6 @@
 @interface BNRForeignStockHolding : BNRStockHolding
 
 @property (nonatomic) float conversionRate;
+@property (nonatomic, copy) NSString *label;
 
 @end

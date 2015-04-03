@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BNRStockHolding.h"
 #import "BNRForeignStockHolding.h"
+#import "BNRPortfolio.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -16,16 +17,20 @@ int main(int argc, const char * argv[]) {
         [first setPurchaseSharePrice:2.3];
         [first setCurrentSharePrice:4.5];
         [first setNumberOfShares:40];
+        [first setLabel:@"XYZ"];
         
         BNRStockHolding *second = [[BNRStockHolding alloc] init];
         [second setPurchaseSharePrice:12.19];
         [second setCurrentSharePrice:10.53];
         [second setNumberOfShares:90];
+        [second setLabel:@"ABC"];
+        
         
         BNRStockHolding *third = [[BNRStockHolding alloc] init];
         [third setPurchaseSharePrice:45.1];
         [third setCurrentSharePrice:49.51];
         [third setNumberOfShares:210];
+        [third setLabel:@"LMN"];
         
         BNRForeignStockHolding *stock = [[BNRForeignStockHolding alloc] init];
         stock.conversionRate = 0.94;
@@ -39,7 +44,12 @@ int main(int argc, const char * argv[]) {
             NSLog(@"cost in dollar: %.2f, value in dollar: %.2f", [s costInDollars], [s valueInDollars]);
         }
         
-
+        NSMutableArray *portfolios = [[NSMutableArray alloc] init];
+        [portfolios addObject:first];
+        [portfolios addObject:second];
+        [portfolios addObject:third];
+        
+        NSLog(@"portfolios: %@", portfolios);
         
     }
     return 0;

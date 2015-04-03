@@ -24,4 +24,9 @@
     return p * n;
 }
 
+-(NSString *)description
+{
+    return [NSString stringWithFormat:@"<Stock %@: %u>", self.label,
+            self.numberOfShares];
+}
 @end

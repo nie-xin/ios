@@ -20,8 +20,10 @@
 @property (nonatomic) BNRPerson *spouse;
 @property (nonatomic) NSMutableArray *children;
 @property (nonatomic, copy) NSArray *assets;
+
 - (double)yearsOfEmployment;
 - (void)addAsset:(BNRAsset *)a;
+- (void)removeAsset: (BNRAsset *)a;
 - (unsigned int)valueOfAssets;
 
 @end
