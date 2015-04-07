@@ -14,6 +14,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSMutableArray *employees = [[NSMutableArray alloc] init];
         
+        NSMutableDictionary *executives = [[NSMutableDictionary alloc] init];
+        
         for (int i = 0; i < 10; i++) {
             BNREmployee *mikey = [[BNREmployee alloc] init];
             
@@ -22,6 +24,14 @@ int main(int argc, const char * argv[]) {
             mikey.employeeID = i;
             
             [employees addObject:mikey];
+            
+            if (i == 0) {
+                [executives setObject:mikey forKey:@"CEO"];
+            }
+            
+            if (i == 1) {
+                [executives setObject:mikey forKey:@"CTO"];
+            }
         }
         
         NSMutableArray *allAssets = [[NSMutableArray alloc] init];
@@ -48,6 +58,10 @@ int main(int argc, const char * argv[]) {
         [employees removeObjectAtIndex:5];
         
         NSLog(@"allAssets: %@", allAssets);
+        
+        NSLog(@"executives: %@", executives);
+        NSLog(@"CEO: %@", executives[@"CEO"]);
+        executives = nil;
         
         NSLog(@"Giveing up ownership of arrays");
         

@@ -15,7 +15,7 @@
 @property (nonatomic) NSDate *hireDate;
 @property (nonatomic) BNRPerson *spouse;
 @property (nonatomic) NSMutableArray *children;
-@property (nonatomic, copy) NSArray *assets;
+@property (nonatomic, copy) NSSet *assets;
 
 - (double)yearsOfEmployment;
 - (void)addAsset:(BNRAsset *)a;
