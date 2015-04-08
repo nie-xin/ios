@@ -44,12 +44,13 @@ int main(int argc, const char * argv[]) {
             NSLog(@"cost in dollar: %.2f, value in dollar: %.2f", [s costInDollars], [s valueInDollars]);
         }
         
-        NSMutableArray *portfolios = [[NSMutableArray alloc] init];
-        [portfolios addObject:first];
-        [portfolios addObject:second];
-        [portfolios addObject:third];
+        BNRPortfolio *portfolios = [[BNRPortfolio alloc] init];
+        [portfolios addPortfolio:first];
+        [portfolios addPortfolio:second];
+        [portfolios addPortfolio:third];
         
         NSLog(@"portfolios: %@", portfolios);
+        NSLog(@"Most valuable stocks: %@", [portfolios topThreeHoldings]);
         
     }
     return 0;

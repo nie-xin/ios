@@ -30,4 +30,14 @@
     [_holdings removeObject:p];
 }
 
+- (NSArray*)topThreeHoldings
+{
+    NSSortDescriptor *vd = [NSSortDescriptor sortDescriptorWithKey:@"numberOfShares" ascending:NO];
+    NSArray *sorted = [_holdings sortedArrayUsingDescriptors:@[vd]];
+    
+    NSRange topThree = NSMakeRange(0, MIN(3, [sorted count]));
+    
+    return [sorted subarrayWithRange:topThree];
+}
+
 @end

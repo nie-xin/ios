@@ -15,5 +15,6 @@
 
 - (void)addPortfolio:(BNRStockHolding *)p;
 - (void)removePortfolio:(BNRStockHolding *)p;
+- (NSArray *)topThreeHoldings;
 
 @end

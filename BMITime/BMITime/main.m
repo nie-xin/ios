@@ -48,22 +48,34 @@ int main(int argc, const char * argv[]) {
             BNREmployee *randomEmployee = [employees objectAtIndex:randomIndex];
             
             [randomEmployee addAsset:asset];
-            [randomEmployee removeAsset:asset];
+//            [randomEmployee removeAsset:asset];
             [allAssets addObject:asset];
         }
         
+        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets"
+                                                              ascending:YES];
+        NSSortDescriptor *eid = [NSSortDescriptor sortDescriptorWithKey:@"employeeID"
+                                                              ascending:YES];
+        [employees sortUsingDescriptors:@[voa, eid]];
+        
         NSLog(@"Employees: %@", employees);
-        NSLog(@"Giving up ownership of one employee");
+//        NSLog(@"Giving up ownership of one employee");
+//        
+//        [employees removeObjectAtIndex:5];
+//        
+//        NSLog(@"allAssets: %@", allAssets);
+//        
+//        NSLog(@"executives: %@", executives);
+//        NSLog(@"CEO: %@", executives[@"CEO"]);
+//        executives = nil;
+//        
+//        NSLog(@"Giveing up ownership of arrays");
         
-        [employees removeObjectAtIndex:5];
-        
-        NSLog(@"allAssets: %@", allAssets);
-        
-        NSLog(@"executives: %@", executives);
-        NSLog(@"CEO: %@", executives[@"CEO"]);
-        executives = nil;
-        
-        NSLog(@"Giveing up ownership of arrays");
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:
+                                  @"holder.valueOfAssets > 700"];
+        NSArray *toBeReclaimed = [allAssets filteredArrayUsingPredicate:predicate];
+        NSLog(@"toBeReclaimed: %@", toBeReclaimed);
+        toBeReclaimed = nil;
         
         allAssets = nil;
         employees = nil;
