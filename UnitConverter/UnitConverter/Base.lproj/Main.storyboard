@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2F-ue-rJQ">
+                                <rect key="frame" x="0.0" y="93" width="204" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="in Kilometre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wco-1n-ufM">
+                                <rect key="frame" x="229" y="97" width="91" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nll-rb-kXs">
+                                <rect key="frame" x="135" y="209" width="51" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKS-OB-eYr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Click Update for the Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Taa-jA-OZX">
+                                <rect key="frame" x="0.0" y="247" width="320" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cEk-t1-Nke">
+                                <rect key="frame" x="0.0" y="173" width="320" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Mile"/>
+                                    <segment title="Yard"/>
+                                    <segment title="Foot"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cEk-t1-Nke" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7I5-qe-dcm"/>
+                            <constraint firstItem="nll-rb-kXs" firstAttribute="top" secondItem="cEk-t1-Nke" secondAttribute="bottom" constant="8" id="B9M-gW-I7e"/>
+                            <constraint firstItem="Taa-jA-OZX" firstAttribute="top" secondItem="nll-rb-kXs" secondAttribute="bottom" constant="8" id="U0Z-Cr-8bs"/>
+                            <constraint firstItem="Taa-jA-OZX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xcd-BB-Y6O"/>
+                            <constraint firstItem="cEk-t1-Nke" firstAttribute="top" secondItem="wco-1n-ufM" secondAttribute="bottom" constant="55" id="fQe-c8-Ylw"/>
+                            <constraint firstItem="nll-rb-kXs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kqj-Gb-y2Q"/>
+                            <constraint firstItem="wco-1n-ufM" firstAttribute="leading" secondItem="E2F-ue-rJQ" secondAttribute="trailing" constant="15" id="ty3-p3-dvw"/>
+                            <constraint firstItem="cEk-t1-Nke" firstAttribute="top" secondItem="E2F-ue-rJQ" secondAttribute="bottom" constant="50" id="xjc-P3-3Mc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="E2F-ue-rJQ" id="3F7-CO-pcT"/>
+                        <outlet property="outputField" destination="Taa-jA-OZX" id="OSG-St-b1L"/>
+                        <outlet property="segmentController" destination="cEk-t1-Nke" id="GBp-64-TX6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="452"/>
+        </scene>
+    </scenes>
+</document>
