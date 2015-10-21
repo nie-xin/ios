@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the starting location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oZ-Sq-S2p">
+                                <rect key="frame" x="20" y="74" width="280" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efm-hf-UXe">
+                                <rect key="frame" x="96" y="340" width="128" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Calculate Distance"/>
+                                <connections>
+                                    <action selector="calculateButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XM1-EE-iAH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ci-41-RWu">
+                                <rect key="frame" x="20" y="162" width="147" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xli-qe-BGN">
+                                <rect key="frame" x="20" y="210" width="147" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Third destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N4o-t5-4Sk">
+                                <rect key="frame" x="20" y="259" width="147" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkH-Rq-RU3">
+                                <rect key="frame" x="175" y="166" width="125" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWX-QP-vj6">
+                                <rect key="frame" x="175" y="214" width="125" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-QW-qUu">
+                                <rect key="frame" x="175" y="263" width="125" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZT1-q5-j47">
+                                <rect key="frame" x="20" y="117" width="280" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="Meters"/>
+                                    <segment title="Kilometers"/>
+                                    <segment title="Miles"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XcW-QW-qUu" firstAttribute="centerY" secondItem="N4o-t5-4Sk" secondAttribute="centerY" id="1cG-fa-1ct"/>
+                            <constraint firstItem="efm-hf-UXe" firstAttribute="leading" secondItem="N4o-t5-4Sk" secondAttribute="trailing" constant="-71" id="CL9-Z3-EGI"/>
+                            <constraint firstItem="ZT1-q5-j47" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D91-oX-8sA"/>
+                            <constraint firstItem="9ci-41-RWu" firstAttribute="top" secondItem="ZT1-q5-j47" secondAttribute="bottom" constant="17" id="Def-Pf-QI8"/>
+                            <constraint firstItem="fWX-QP-vj6" firstAttribute="centerY" secondItem="Xli-qe-BGN" secondAttribute="centerY" id="IQO-W9-FXJ"/>
+                            <constraint firstItem="efm-hf-UXe" firstAttribute="leading" secondItem="9ci-41-RWu" secondAttribute="trailing" constant="-71" id="M5g-SE-mLh"/>
+                            <constraint firstItem="XcW-QW-qUu" firstAttribute="leading" secondItem="N4o-t5-4Sk" secondAttribute="trailing" constant="8" id="NK8-Vu-UdF"/>
+                            <constraint firstItem="fWX-QP-vj6" firstAttribute="leading" secondItem="Xli-qe-BGN" secondAttribute="trailing" constant="8" id="RLK-ud-1r1"/>
+                            <constraint firstItem="efm-hf-UXe" firstAttribute="top" secondItem="9ci-41-RWu" secondAttribute="bottom" constant="148" id="Rre-yA-dzt"/>
+                            <constraint firstItem="vkH-Rq-RU3" firstAttribute="centerY" secondItem="9ci-41-RWu" secondAttribute="centerY" id="T2f-IG-mey"/>
+                            <constraint firstItem="efm-hf-UXe" firstAttribute="leading" secondItem="Xli-qe-BGN" secondAttribute="trailing" constant="-71" id="XHX-9K-sgJ"/>
+                            <constraint firstItem="8oZ-Sq-S2p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g99-1L-24E"/>
+                            <constraint firstItem="efm-hf-UXe" firstAttribute="top" secondItem="Xli-qe-BGN" secondAttribute="bottom" constant="100" id="gWh-S9-9Ji"/>
+                            <constraint firstItem="efm-hf-UXe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pbo-A7-SnE"/>
+                            <constraint firstItem="vkH-Rq-RU3" firstAttribute="leading" secondItem="9ci-41-RWu" secondAttribute="trailing" constant="8" id="tcE-1q-w0Y"/>
+                            <constraint firstItem="efm-hf-UXe" firstAttribute="top" secondItem="N4o-t5-4Sk" secondAttribute="bottom" constant="51" id="wlt-cX-Htg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="efm-hf-UXe" id="Rqn-yk-I4J"/>
+                        <outlet property="distance1" destination="vkH-Rq-RU3" id="YJf-nF-taY"/>
+                        <outlet property="distance2" destination="fWX-QP-vj6" id="o0Y-13-GOv"/>
+                        <outlet property="distance3" destination="XcW-QW-qUu" id="uYy-VS-NsS"/>
+                        <outlet property="endLocation1" destination="9ci-41-RWu" id="yC3-AI-lhs"/>
+                        <outlet property="endLocation2" destination="Xli-qe-BGN" id="knS-bS-c0O"/>
+                        <outlet property="endLocation3" destination="N4o-t5-4Sk" id="6Zx-xY-rCl"/>
+                        <outlet property="startLocation" destination="8oZ-Sq-S2p" id="z9H-H7-XAC"/>
+                        <outlet property="unitController" destination="ZT1-q5-j47" id="pGs-pr-tfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+    </scenes>
+</document>
